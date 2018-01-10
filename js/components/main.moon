@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li m-for="coin in store.state.coins">{{ coin }}</li>
+    <li m-for="coin in store.state.coins">{{ coin.name }}</li>
   </ul>
 </template>
 <style scoped>

@@ -1,5 +1,7 @@
 <template>
+<span>
   <h1>{{content}}</h1>
+</span>
 </template>
 <style scoped>
   h1 {
@@ -10,7 +12,9 @@
   }
 </style>
 <script>
+  const store = require("../store/store.js").store;
   exports = {
-    props: ["content"]
+    props: ["content"],
+    store: store
   }
 </script>

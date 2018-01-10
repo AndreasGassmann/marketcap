@@ -1,4 +1,4 @@
-const Moon = require("moonjs");
+global.Moon = require("moonjs");
 
 require("./store/store.js").init(Moon);
 const store = require("./store/store.js").store;

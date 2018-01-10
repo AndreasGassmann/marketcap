@@ -10,10 +10,10 @@ let getPrices = () => {
     .then(function (prices) {
       console.log('test');
       //console.log(prices);
-      let leader = prices[3];
+      let leader = prices[20];
 
       prices.forEach((p, i) => {
-        if (i < 100) {
+        if (i < 150) {
           let amount = leader.market_cap_usd / p.available_supply;
           console.log(p.symbol + ' could be $' + amount);
           }
